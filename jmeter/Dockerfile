@@ -13,5 +13,5 @@ RUN wget http://apache.tt.co.kr//jmeter/binaries/apache-jmeter-2.11.tgz
 RUN tar xf apache-jmeter-2.11.tgz
 
 EXPOSE 1099
-CMD apache-jmeter-2.11/bin/jmeter-server &
+CMD apache-jmeter-2.11/bin/jmeter-server 
 
