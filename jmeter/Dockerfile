@@ -18,7 +18,7 @@ ENV RMI_LOCALHOSTNAME 127.0.0.1
 ENV RMI_LOCALPORT 40000
 ENV SERVER_PORT 30000
 
-EXPOSE 1099
+EXPOSE 22
 CMD /usr/sbin/sshd -D &
 CMD apache-jmeter-2.11/bin/jmeter -s -j jmeter-server.log -Dserver.rmi.localhostname=${RMI_LOCALHOSTNAME} -Dserver.rmi.localport=${RMI_LOCALPORT} -Dserver_port=${SERVER_PORT} -Djava.rmi.server.hostname=${RMI_LOCALHOSTNAME}
 
